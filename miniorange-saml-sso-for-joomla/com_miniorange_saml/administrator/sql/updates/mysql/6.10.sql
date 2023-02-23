@@ -1,0 +1,1 @@
+ALTER TABLE `#__miniorange_saml_config` ADD COLUMN `show_tc_popup` boolean DEFAULT false;

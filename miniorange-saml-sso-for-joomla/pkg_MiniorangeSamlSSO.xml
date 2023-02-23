@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="package" method="upgrade">
+	<name>zPackage miniOrange SAML Login</name>
+	<packagename>MiniorangeSamlSSO</packagename>
+	<version>7.6</version>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<license>GNU General Public License version 3</license>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<creationDate>May 2017</creationDate>
+	<description></description>
+	<files>
+		<file type="plugin" id="miniorangesaml" group="authentication">plg_authentication_miniorangesaml.zip</file>
+		<file type="library" id="miniorangesamlplugin">lib_miniorangesamlplugin.zip</file>
+		<file type="plugin" id="samlredirect" group="system">plg_system_samlredirect.zip</file>
+		<file type="component" id="miniorangesamlpluginc" >com_miniorange_saml.zip</file>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">/en-GB/en-GB.pkg_miniorangesamlsso.sys.ini</language>
+	</languages>
+	<scriptfile>pkg_script.php</scriptfile>
+	<updateservers><server type="extension" priority="1" name="MiniorangeSSO">https://miniorange.com/joomla_plugin_update.xml</server></updateservers>
+</extension>
