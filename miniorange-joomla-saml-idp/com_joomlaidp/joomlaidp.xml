@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.5.1" method="upgrade">
+ 
+	<name>COM_JOOMLAIDP</name>
+	<creationDate>February 2016</creationDate>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>http://miniorange.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>GNU General Public License version 3</license> 
+	<version>4.4.9</version>
+	<description>COM_JOOMLAIDP_DESCRIPTION</description>
+ 
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update -->
+        <schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+    </update>
+		
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=account"  alt="miniOrange Joomla IDP">COM_JOOMLAIDP_MENU</menu>
+		<submenu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=sp" alt="miniOrange Joomla IDP/Service Provider">COM_JOOMLAIDP_SERVICE_PROVIDER</menu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=idp" alt="miniOrange Joomla IDP/Identity Provider">COM_JOOMLAIDP_IDENTITY_PROVIDER</menu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=advance_mapping" alt="miniOrange Joomla IDP/Identity Provider">COM_JOOMLAIDP_MAPPING</menu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=role_relay_restriciton" alt="miniOrange Joomla IDP/Service Provider">COM_JOOMLAIDP_RELAY_RESTRICTION</menu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=signin_settings"  alt="miniOrange Joomla IDP/Identity Provider">COM_JOOMLAIDP_SIGNIN_SETTINGS</menu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=license" alt="miniOrange Joomla IDP/Licensing Plans">COM_JOOMLAIDP_LICENSING_PLANS</menu>
+			<menu link="option=com_joomlaidp&amp;view=accountsetup&amp;tab-panel=account" alt="miniOrange Joomla IDP/Account Setup">COM_JOOMLAIDP_ACCOUNT_SETUP</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>joomlaidp.php</filename>
+			<filename>controller.php</filename>
+			<!-- helper files section -->
+			<folder>assets</folder>
+			<!-- helper files section -->
+			<folder>helpers</folder>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+		</files>
+		<languages folder="admin/language">
+        	<language tag="en-GB">en-GB/en-GB.com_joomlaidp.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_joomlaidp.sys.ini</language>
+		</languages>
+	</administration>
+		<updateservers><server type="extension" priority="1" name="MiniorangeSSO">https://miniorange.com/joomla_idp_plugin_update.xml</server></updateservers>
+</extension>

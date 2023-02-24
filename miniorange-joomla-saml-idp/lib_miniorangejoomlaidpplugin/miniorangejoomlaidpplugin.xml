@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" version="3.5.1" method="upgrade">
+    <name>LIB_MINIORANGEJOOMLAIDPPLUGIN_NAME</name>
+    <libraryname>miniorangejoomlaidpplugin</libraryname>
+    <author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>www.miniorange.com</authorUrl>
+    <creationDate>February 2016</creationDate>
+    <copyright>Copyright 2015 miniOrange. All Rights Reserved.</copyright>
+    <license>GNU General Public License version 3</license>
+    <version>4.4.9</version>
+    <description>LIB_MINIORANGEJOOMLAIDPPLUGIN_XML_DESCRIPTION</description>
+    <files>
+        <folder>utility</folder>
+		<filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.lib_miniorangejoomlaidpplugin.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.lib_miniorangejoomlaidpplugin.sys.ini</language>
+    </languages>
+</extension>

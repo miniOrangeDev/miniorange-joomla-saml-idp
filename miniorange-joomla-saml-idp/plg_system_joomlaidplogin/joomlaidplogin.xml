@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5.1" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JOOMLAIDPLOGIN_NAME</name>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>www.miniorange.com</authorUrl>
+	<creationDate>February 2016</creationDate>
+	<copyright>Copyright 2015 miniOrange. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 3</license>
+	<version>4.4.9</version>
+	<description>PLG_SYSTEM_JOOMLAIDPLOGIN_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="joomlaidplogin">joomlaidplogin.php</filename>
+		<folder>saml2idp</folder>
+		<folder>language</folder>
+		<filename>index.html</filename>
+	</files>
+	<scriptfile>my_script.php</scriptfile>
+	<config />
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_joomlaidplogin.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_joomlaidplogin.sys.ini</language>
+	</languages>
+</extension>

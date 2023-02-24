@@ -1,0 +1,1 @@
+ALTER TABLE `#__miniorange_saml_idp_customer` ADD COLUMN `uninstall_feedback` int(2) NOT NULL;

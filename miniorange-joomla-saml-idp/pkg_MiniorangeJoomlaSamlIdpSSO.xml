@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5.1" type="package" method="upgrade">
+	<name>Package miniOrange Joomla SAML IDP Login</name>
+	<packagename>MiniorangeJoomlaSamlIdpSSO</packagename>
+	<version>4.4.9</version>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<license>GNU General Public License version 3</license>
+	<creationDate>February 2016</creationDate>
+	<description>Plugin package for miniOrange Joomla SAML IDP Login</description>
+	<scriptfile>pkg_script.php</scriptfile>
+	<files>
+		<file type="library" id="miniorangejoomlaidpplugin">lib_miniorangejoomlaidpplugin.zip</file>
+		<file type="plugin" id="miniorangejoomlaidp" group="user">plg_user_miniorangejoomlaidp.zip</file>
+		<file type="plugin" id="joomlaidplogin" group="system">plg_system_joomlaidplogin.zip</file>
+		<file type="component" id="joomlaidp" >com_joomlaidp.zip</file>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.pkg_miniorangejoomlasamlidpsso.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.pkg_miniorangejoomlasamlidpsso.sys.ini</language>
+	</languages>
+	<updateservers><server type="extension" priority="1" name="MiniorangeSSO">http://miniorange.com/joomla_idp_plugin_update.xml</server></updateservers>
+</extension>

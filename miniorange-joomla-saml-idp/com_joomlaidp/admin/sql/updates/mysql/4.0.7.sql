@@ -1,0 +1,2 @@
+ALTER TABLE `#__miniorange_saml_idp_customer` ADD COLUMN `show_tc_popup` tinyint(1) DEFAULT 1;
+ALTER TABLE `#__miniorange_saml_idp_customer` CHANGE `initialise_visual_tour` `initialise_visual_tour` tinyint(1) DEFAULT 1;
