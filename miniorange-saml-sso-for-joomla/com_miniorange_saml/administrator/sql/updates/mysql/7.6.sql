@@ -1,1 +1,0 @@
-ALTER TABLE `#__miniorange_saml_customer_details` ADD COLUMN `mo_cron_period` VARCHAR(255)  NOT NULL;
